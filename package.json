@@ -25,7 +25,7 @@
       [
         "bash",
         "-c",
-        "./configure --prefix=$cur__install #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''} FREETYPE_LIBS='-L#{esy-freetype2.lib} -lfreetype' FREETYPE_CFLAGS='-I#{esy-freetype2.install / 'include' / 'freetype2'}'"
+        "./configure --disable-dependency-tracking --prefix=$cur__install #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''} FREETYPE_LIBS='-L#{esy-freetype2.lib} -lfreetype' FREETYPE_CFLAGS='-I#{esy-freetype2.install / 'include' / 'freetype2'}'"
       ],
       [
         "make",
