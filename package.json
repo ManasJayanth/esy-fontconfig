@@ -3,14 +3,11 @@
   "version": "2.13.1000",
   "description": "fontconfig packaged for esy",
   "esy": {
-    "buildEnv": {
-      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
-    },
     "buildsInSource": true,
     "exportedEnv": {
       "PKG_CONFIG_PATH": {
         "scope": "global",
-        "val": "#{self.lib / 'pkgconfig'}:$#{esy-freetype2.lib / 'pkgconfig'}:PKG_CONFIG_PATH"
+        "val": "#{self.lib / 'pkgconfig'}:#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
       }
     },
     "buildEnv": {
