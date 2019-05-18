@@ -1,5 +1,5 @@
 {
-  "checksum": "c2f93344e4865c755cbbdf11e169077b",
+  "checksum": "18242912e45b47d5642b237f4e85fce4",
   "root": "esy-fontconfig@link-dev:./package.json",
   "node": {
     "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9": {
@@ -32,6 +32,24 @@
       },
       "overrides": [],
       "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9": {
+      "id":
+        "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
+      "name": "esy-libpng",
+      "version":
+        "github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9"
+      ],
       "devDependencies": []
     },
     "esy-gperf@github:prometheansacrifice/esy-gperf#611c95170bd59aedb26adb500a08c97bd2112981@d41d8cd9": {
@@ -80,9 +98,11 @@
       "overrides": [],
       "dependencies": [
         "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9",
+        "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
         "esy-gperf@github:prometheansacrifice/esy-gperf#611c95170bd59aedb26adb500a08c97bd2112981@d41d8cd9",
         "esy-freetype2@github:esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886@d41d8cd9",
-        "esy-expat@github:esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3@d41d8cd9"
+        "esy-expat@github:esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3@d41d8cd9",
+        "esy-bzip2@github:esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7@d41d8cd9"
       ],
       "devDependencies": []
     },
@@ -110,6 +130,22 @@
         "type": "install",
         "source": [
           "archive:https://registry.npmjs.org/esy-cmake/-/esy-cmake-0.3.5.tgz#sha1:2df0bdfe9317fbcded5f463fca1f346464494c7a"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-bzip2@github:esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7@d41d8cd9": {
+      "id":
+        "esy-bzip2@github:esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7@d41d8cd9",
+      "name": "esy-bzip2",
+      "version":
+        "github:esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7"
         ]
       },
       "overrides": [],

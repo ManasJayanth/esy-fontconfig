@@ -14,7 +14,8 @@
       }
     },
     "buildEnv": {
-      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
+      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH",
+      "LDFLAGS": "-L#{esy-libpng.lib} -lpng -L#{esy-zlib.lib} -lz -L#{esy-bzip2.lib} -lbz2 $LDFLAGS"
     },
     "build": [
       [
@@ -41,7 +42,9 @@
     "esy-freetype2": "esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886",
     "esy-expat": "esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3",
     "esy-gperf": "prometheansacrifice/esy-gperf#patch-disable-docs",
-    "esy-zlib": "esy-packages/esy-zlib#master"
+    "esy-zlib": "esy-packages/esy-zlib#master",
+    "esy-libpng": "esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
+    "esy-bzip2": "esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7"
   },
   "resolutions": {}
 }
