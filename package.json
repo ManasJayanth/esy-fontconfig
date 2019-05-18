@@ -23,6 +23,7 @@
         "755",
         "./configure"
       ],
+      "find ./ -exec touch -t 200905010101 {} +",
       [
         "bash",
         "-c",
