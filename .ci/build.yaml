@@ -7,7 +7,7 @@ jobs:
 - job: ${{ parameters.host }}
   pool: ${{ parameters.pool }}
   steps:
-  - ${{ if eq(parameters.host, 'Ubuntu') }}:
+  - ${{ if eq(parameters.host, 'Linux') }}:
     - script: sudo apt install uuid-dev
       displayName: 'Install uuid-dev (TODO)'
   - ${{ if eq(parameters.host, 'macOS') }}:
