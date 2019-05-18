@@ -15,6 +15,7 @@
     },
     "buildEnv": {
       "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH",
+      "LD_LIBRARY_PATH": "#{esy-zlib.lib}:$LD_LIBRARY_PATH",
       "LDFLAGS": "-L#{esy-libpng.lib} -lpng -L#{esy-zlib.lib} -lz -L#{esy-bzip2.lib} -lbz2 $LDFLAGS"
     },
     "build": [
