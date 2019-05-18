@@ -10,7 +10,7 @@
     "exportedEnv": {
       "PKG_CONFIG_PATH": {
         "scope": "global",
-        "val": "#{esy-freetype2.lib / 'pkgconfig'}:${self.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
+        "val": "#{esy-freetype2.lib / 'pkgconfig'}:#{self.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
       }
     },
     "buildEnv": {
