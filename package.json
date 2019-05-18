@@ -1,0 +1,47 @@
+{
+  "name": "esy-fontconfig",
+  "version": "2.13.1000",
+  "description": "fontconfig packaged for esy",
+  "esy": {
+    "buildEnv": {
+      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
+    },
+    "buildsInSource": true,
+    "exportedEnv": {
+      "PKG_CONFIG_PATH": {
+        "scope": "global",
+        "val": "#{self.lib / 'pkgconfig' : $PKG_CONFIG_PATH }"
+      }
+    },
+    "buildEnv": {
+      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
+    },
+    "build": [
+      [
+        "chmod",
+        "755",
+        "./configure"
+      ],
+      [
+        "bash",
+        "-c",
+        "./configure --prefix=$cur__install #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''} FREETYPE_LIBS='-L#{esy-freetype2.lib} -lfreetype' FREETYPE_CFLAGS='-I#{esy-freetype2.install / 'include' / 'freetype2'}'"
+      ],
+      [
+        "make",
+        "V=1"
+      ],
+      [
+        "make",
+        "install"
+      ]
+    ]
+  },
+  "dependencies": {
+    "esy-freetype2": "esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886",
+    "esy-expat": "esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3",
+    "esy-gperf": "prometheansacrifice/esy-gperf#patch-disable-docs",
+    "esy-zlib": "esy-packages/esy-zlib#master"
+  },
+  "resolutions": {}
+}
