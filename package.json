@@ -38,12 +38,12 @@
     ]
   },
   "dependencies": {
-    "esy-freetype2": "esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886",
+    "esy-freetype2": "prometheansacrifice/esy-freetype2#v2.10.0",
     "esy-expat": "esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3",
     "esy-gperf": "prometheansacrifice/esy-gperf#patch-disable-docs",
     "esy-zlib": "esy-packages/esy-zlib#master",
     "esy-libpng": "esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
-    "esy-bzip2": "esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7"
+    "esy-bzip2": "esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028"
   },
   "resolutions": {}
 }
