@@ -38,7 +38,7 @@
     ]
   },
   "dependencies": {
-    "esy-freetype2": "prometheansacrifice/esy-freetype2#v2.10.0",
+    "esy-freetype2": "prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f",
     "esy-expat": "esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3",
     "esy-gperf": "prometheansacrifice/esy-gperf#patch-disable-docs",
     "esy-zlib": "esy-packages/esy-zlib#master",
