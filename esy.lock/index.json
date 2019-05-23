@@ -1,5 +1,5 @@
 {
-  "checksum": "5127a5b69b8cab9656439a26a0aadacd",
+  "checksum": "fec419965dd483c6c8568345e029b12b",
   "root": "esy-fontconfig@link-dev:./package.json",
   "node": {
     "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9": {
@@ -28,6 +28,22 @@
         "type": "install",
         "source": [
           "github:esy-packages/esy-texinfo#4a05feafbbcc4c57d5d25899fbdab98961b9a69c"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-ragel@github:esy-packages/esy-ragel#7f949da4066f399051d9ec6a813773d0eabb036a@d41d8cd9": {
+      "id":
+        "esy-ragel@github:esy-packages/esy-ragel#7f949da4066f399051d9ec6a813773d0eabb036a@d41d8cd9",
+      "name": "esy-ragel",
+      "version":
+        "github:esy-packages/esy-ragel#7f949da4066f399051d9ec6a813773d0eabb036a",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-ragel#7f949da4066f399051d9ec6a813773d0eabb036a"
         ]
       },
       "overrides": [],
@@ -87,21 +103,27 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "esy-harfbuzz@github:esy-packages/esy-harfbuzz#4c8e602a063b10d6b81e3c7cc68cb53f1976470c@d41d8cd9": {
+    "esy-harfbuzz@github:prometheansacrifice/esy-harfbuzz#bf1f8c37d07186d74ccbf9d858bc0e19f2286086@d41d8cd9": {
       "id":
-        "esy-harfbuzz@github:esy-packages/esy-harfbuzz#4c8e602a063b10d6b81e3c7cc68cb53f1976470c@d41d8cd9",
+        "esy-harfbuzz@github:prometheansacrifice/esy-harfbuzz#bf1f8c37d07186d74ccbf9d858bc0e19f2286086@d41d8cd9",
       "name": "esy-harfbuzz",
       "version":
-        "github:esy-packages/esy-harfbuzz#4c8e602a063b10d6b81e3c7cc68cb53f1976470c",
+        "github:prometheansacrifice/esy-harfbuzz#bf1f8c37d07186d74ccbf9d858bc0e19f2286086",
       "source": {
         "type": "install",
         "source": [
-          "github:esy-packages/esy-harfbuzz#4c8e602a063b10d6b81e3c7cc68cb53f1976470c"
+          "github:prometheansacrifice/esy-harfbuzz#bf1f8c37d07186d74ccbf9d858bc0e19f2286086"
         ]
       },
       "overrides": [],
-      "dependencies": [ "esy-cmake@0.3.5@d41d8cd9" ],
-      "devDependencies": [ "esy-cmake@0.3.5@d41d8cd9" ]
+      "dependencies": [
+        "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9",
+        "esy-ragel@github:esy-packages/esy-ragel#7f949da4066f399051d9ec6a813773d0eabb036a@d41d8cd9",
+        "esy-python@github:esy-packages/esy-python#22a58395ae687852fee64ff6e752bd1354a4f343@d41d8cd9",
+        "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
+        "esy-bzip2@github:esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028@d41d8cd9"
+      ],
+      "devDependencies": []
     },
     "esy-gperf@github:prometheansacrifice/esy-gperf#611c95170bd59aedb26adb500a08c97bd2112981@d41d8cd9": {
       "id":
@@ -121,16 +143,16 @@
       ],
       "devDependencies": []
     },
-    "esy-freetype2@github:prometheansacrifice/esy-freetype2#789fccdc4e80ad467a59f3c6fe3ca9f26252c88d@d41d8cd9": {
+    "esy-freetype2@github:prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f@d41d8cd9": {
       "id":
-        "esy-freetype2@github:prometheansacrifice/esy-freetype2#789fccdc4e80ad467a59f3c6fe3ca9f26252c88d@d41d8cd9",
+        "esy-freetype2@github:prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f@d41d8cd9",
       "name": "esy-freetype2",
       "version":
-        "github:prometheansacrifice/esy-freetype2#789fccdc4e80ad467a59f3c6fe3ca9f26252c88d",
+        "github:prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f",
       "source": {
         "type": "install",
         "source": [
-          "github:prometheansacrifice/esy-freetype2#789fccdc4e80ad467a59f3c6fe3ca9f26252c88d"
+          "github:prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f"
         ]
       },
       "overrides": [],
@@ -138,7 +160,7 @@
         "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9",
         "esy-python@github:esy-packages/esy-python#22a58395ae687852fee64ff6e752bd1354a4f343@d41d8cd9",
         "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
-        "esy-harfbuzz@github:esy-packages/esy-harfbuzz#4c8e602a063b10d6b81e3c7cc68cb53f1976470c@d41d8cd9",
+        "esy-harfbuzz@github:prometheansacrifice/esy-harfbuzz#bf1f8c37d07186d74ccbf9d858bc0e19f2286086@d41d8cd9",
         "esy-bzip2@github:esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028@d41d8cd9"
       ],
       "devDependencies": []
@@ -157,7 +179,7 @@
         "esy-zlib@github:esy-packages/esy-zlib#404929fd8b7ed83ed6a528d751840faff957b4b3@d41d8cd9",
         "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
         "esy-gperf@github:prometheansacrifice/esy-gperf#611c95170bd59aedb26adb500a08c97bd2112981@d41d8cd9",
-        "esy-freetype2@github:prometheansacrifice/esy-freetype2#789fccdc4e80ad467a59f3c6fe3ca9f26252c88d@d41d8cd9",
+        "esy-freetype2@github:prometheansacrifice/esy-freetype2#b7bfa03f77ad926ba03b2f923878fe3418e0273f@d41d8cd9",
         "esy-expat@github:esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3@d41d8cd9",
         "esy-bzip2@github:esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028@d41d8cd9"
       ],
@@ -173,20 +195,6 @@
         "type": "install",
         "source": [
           "github:esy-packages/esy-expat#d17ff889986311c3e80cae4187be42900f88c7d3"
-        ]
-      },
-      "overrides": [],
-      "dependencies": [],
-      "devDependencies": []
-    },
-    "esy-cmake@0.3.5@d41d8cd9": {
-      "id": "esy-cmake@0.3.5@d41d8cd9",
-      "name": "esy-cmake",
-      "version": "0.3.5",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://registry.npmjs.org/esy-cmake/-/esy-cmake-0.3.5.tgz#sha1:2df0bdfe9317fbcded5f463fca1f346464494c7a"
         ]
       },
       "overrides": [],
